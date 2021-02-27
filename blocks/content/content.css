@@ -1,0 +1,24 @@
+.content {
+  display: grid;
+  grid-template-columns: fit-content(984px);
+  grid-template-rows: 5fr;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1279px) {
+  .content {
+    grid-template-columns: fit-content(928px);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .content {
+    grid-template-columns: fit-content(768px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    grid-template-columns: fit-content(320px);
+  }
+}
