@@ -3,20 +3,27 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 48px;
   margin-bottom: 24px;
 }
 
+
+@media screen and (max-width: 1279px) {
+  .footer {
+    max-width: 928px;
+  }
+}
+
+
 @media screen and (max-width: 1023px) {
   .footer {
-    padding: 0 24px;
+    max-width: calc(768px - 24px*2);
   }
 }
 
 @media screen and (max-width: 767px) {
   .footer {
+    max-width: calc(320px - 16px*2);
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 16px;
   }
 }
